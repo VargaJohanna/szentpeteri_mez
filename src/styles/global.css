@@ -1,0 +1,69 @@
+html {
+  background-color: #fdfbf5;
+  font-family: sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding: 60px;
+}
+
+.head {
+  background-color: #333333;
+  color: #ffffff;
+  padding-inline-start: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-inline-end: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-brand {
+  text-transform: uppercase;
+}
+
+.header-phone {
+  text-transform: uppercase;
+}
+
+.carousel {
+  background-color: #fcc409;
+  height: 400px;
+}
+
+.list-container {
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  width: 75%;
+  margin-left: 12%;
+}
+
+.list-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.list-image {
+  border: 5px solid black;
+}
+
+.honey-price-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+  .list-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media only screen and (min-width: 768px) {
+  .list-container { grid-template-columns: repeat(3, 1fr); }
+}

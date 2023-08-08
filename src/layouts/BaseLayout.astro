@@ -1,0 +1,21 @@
+---
+import Header from '../components/Header.astro';
+import Carousel from '../components/Carousel.astro';
+import List from '../components/List.astro';
+const {pageTitle} = Astro.props;
+---
+
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>{pageTitle}</title>
+    </head>
+
+    <body>
+        <Header/>
+        <Carousel/>
+        <List/>
+    </body>
+
+</html>

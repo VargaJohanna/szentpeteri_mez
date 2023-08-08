@@ -1,8 +1,14 @@
 ---
-interface Props {
-	title: string;
-	phoneNumber: string;
-}
-
-const { title, phoneNumber } = Astro.props;
+const brandName = "Szentpéteri méz";
+const phoneNum = "+36 30/111-1111";
 ---
+
+<div class="head">
+  <div class="header-brand">
+    <h3>{brandName}</h3>
+  </div>
+
+  <div class="header-phone">
+    <h3>{phoneNum}</h3>
+  </div>
+</div>
