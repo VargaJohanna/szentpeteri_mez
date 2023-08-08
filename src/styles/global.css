@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url('/fonts/Aleo-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   background-color: #fdfbf5;
-  font-family: sans-serif;
 }
 
 h2 {
