@@ -23,13 +23,6 @@ h3 {
   font-weight: 500;
 }
 
-h4 {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-size: 2vw;
-}
-
 .head {
   background-color: #333333;
   color: #ffffff;
@@ -60,6 +53,7 @@ h4 {
   row-gap: 50px;
   width: 75%;
   margin-left: 12.5%;
+  grid-auto-rows: 1fr;
 }
 
 .list-item {
@@ -80,6 +74,14 @@ h4 {
   gap: 20px;
 }
 
+.honey-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 20px;
+  font-size: 20pt;
+}
+
 .honey-weight{
   font-style: italic;
 }
@@ -93,13 +95,14 @@ h4 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 799px) {
   .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  h4 {font-size: 20pt;}
+  .honey-title {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1199px) {
   .list-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .honey-title {font-size: 20pt;}
 }
