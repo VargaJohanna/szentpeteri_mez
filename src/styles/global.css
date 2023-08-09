@@ -13,15 +13,30 @@ html {
 h2 {
   text-align: center;
   padding: 60px;
+  font-size: 36pt;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24pt;
+  font-weight: 500;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 2vw;
 }
 
 .head {
   background-color: #333333;
   color: #ffffff;
   padding-inline-start: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-inline-end: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-inline-end: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -44,7 +59,7 @@ h2 {
   column-gap: 50px;
   row-gap: 50px;
   width: 75%;
-  margin-left: 12%;
+  margin-left: 12.5%;
 }
 
 .list-item {
@@ -61,6 +76,17 @@ h2 {
 .honey-price-container{
   display: grid;
   grid-template-columns: auto auto;
+  font-size: 20pt;
+  gap: 20px;
+}
+
+.honey-weight{
+  font-style: italic;
+}
+
+.honey-price {
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 * {
@@ -68,9 +94,12 @@ h2 {
 }
 
 @media only screen and (min-width: 600px) {
-  .list-container { grid-template-columns: repeat(2, 1fr); }
+  .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  h4 {font-size: 20pt;}
+  .honey-weight {font-size: 16pt;}
+  .honey-price {font-size: 16pt;}
 }
 
 @media only screen and (min-width: 768px) {
-  .list-container { grid-template-columns: repeat(3, 1fr); }
+  .list-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }

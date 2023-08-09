@@ -1,15 +1,24 @@
 ---
 import image1 from "../assets/1686757969672-01.jpeg"
-const {title} = Astro.props
+const {honeyName} = Astro.props
+const {fulllPrice} = Astro.props
+const {halfPrice} = Astro.props
+const {bucketWeight} = Astro.props
+const {bucketPrice} = Astro.props
+const fullWeight = "1000 g";
+const halfWeight = "500 g";
+const {image} = Astro.props
 ---
 
 <div class="list-item">
-    <img class="list-image" src={image1} style="width:100%">
-    Akácméz
+    <img class="list-image" src={image} style="width:100%">
+    <h4>{honeyName}</h4>
     <div class="honey-price-container">
-        <div>1000 g</div>
-        <div>3000 Ft</div>
-        <div>500 g</div>
-        <div>1500 Ft</div>
+        <div class="honey-weight">{fullWeight}</div>
+        <div class="honey-price">{fulllPrice}</div>
+        <div class="honey-weight">{halfWeight}</div>
+        <div class="honey-price">{halfPrice}</div>
+        <div class="honey-weight">{bucketWeight}</div>
+        <div class="honey-price">{bucketPrice}</div>
     </div>
 </div>
