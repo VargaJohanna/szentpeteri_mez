@@ -1,14 +1,14 @@
 ---
 import ListItem from "./ListItem.astro";
-import image1 from "../assets/akac.jpeg"
-import image2 from "../assets/repce.jpg"
-import image3 from "../assets/napraforgo.jpg"
-import image4 from "../assets/vodor.jpeg"
-import image5 from "../assets/viragpor.jpeg"
-import image6 from "../assets/fadoboz.jpg"
-import image7 from "../assets/diszdoboz1.jpg"
-import image8 from "../assets/diszdoboz2.jpg"
-import image9 from "../assets/diszdoboz3.jpg"
+import image1 from "../assets/akac.jpeg";
+import image2 from "../assets/repce.jpg";
+import image3 from "../assets/napraforgo.jpg";
+import image4 from "../assets/vodor.jpeg";
+import image5 from "../assets/viragpor.jpeg";
+import image6 from "../assets/fadoboz.jpg";
+import image7 from "../assets/diszdoboz1.jpg";
+import image8 from "../assets/diszdoboz2.jpg";
+import image9 from "../assets/diszdoboz3.jpg";
 
 const listTitle = "Termékeink";
 const akacName = "Akácméz";
@@ -39,17 +39,68 @@ const diszDoboz2Price = "4000 Ft";
 const diszDoboz3Name = "Díszdobozos kiszerelés";
 const diszDoboz3Weight = "3 x 140 g";
 const diszDoboz3Price = "3000 Ft";
-
 ---
+
 <h2>{listTitle}</h2>
 <div class="list-container">
-    <ListItem image={image1} honeyName={akacName} fulllPrice={akacFullPrice} halfPrice={akacHalfPrice} fullWeight={fullWeight} halfWeight={halfWeight}/>
-    <ListItem image={image2} honeyName={repceName} fulllPrice={repceFullPrice} halfPrice={repceHalfPrice} fullWeight={fullWeight} halfWeight={halfWeight}/>
-    <ListItem image={image3} honeyName={napraforgoName} fulllPrice={napraforgoFullPrice} halfPrice={napraforgoHalfPrice} fullWeight={fullWeight} halfWeight={halfWeight}/>
-    <ListItem image={image4} honeyName={napraforgoName} fulllPrice={napraforgoBucketPrice} fullWeight={napraforgoBucketWeight}/>
-    <ListItem image={image5} honeyName={viragporName} fulllPrice={viragporPrice} fullWeight={viragporWeight}/>
-    <ListItem image={image6} honeyName={fadobozName} fulllPrice={fadobozPrice} fullWeight={fadobozWeight}/>
-    <ListItem image={image7} honeyName={diszDoboz1Name} fulllPrice={diszDoboz1Price} fullWeight={diszDoboz1Weight}/>
-    <ListItem image={image8} honeyName={diszDoboz2Name} fulllPrice={diszDoboz2Price} fullWeight={diszDoboz2Weight}/>
-    <ListItem image={image9} honeyName={diszDoboz3Name} fulllPrice={diszDoboz3Price} fullWeight={diszDoboz3Weight}/>
+  <ListItem
+    image={image1}
+    honeyName={akacName}
+    fulllPrice={akacFullPrice}
+    halfPrice={akacHalfPrice}
+    fullWeight={fullWeight}
+    halfWeight={halfWeight}
+  />
+  <ListItem
+    image={image2}
+    honeyName={repceName}
+    fulllPrice={repceFullPrice}
+    halfPrice={repceHalfPrice}
+    fullWeight={fullWeight}
+    halfWeight={halfWeight}
+  />
+  <ListItem
+    image={image3}
+    honeyName={napraforgoName}
+    fulllPrice={napraforgoFullPrice}
+    halfPrice={napraforgoHalfPrice}
+    fullWeight={fullWeight}
+    halfWeight={halfWeight}
+  />
+  <ListItem
+    image={image4}
+    honeyName={napraforgoName}
+    fulllPrice={napraforgoBucketPrice}
+    fullWeight={napraforgoBucketWeight}
+  />
+  <ListItem
+    image={image5}
+    honeyName={viragporName}
+    fulllPrice={viragporPrice}
+    fullWeight={viragporWeight}
+  />
+  <ListItem
+    image={image6}
+    honeyName={fadobozName}
+    fulllPrice={fadobozPrice}
+    fullWeight={fadobozWeight}
+  />
+  <ListItem
+    image={image7}
+    honeyName={diszDoboz1Name}
+    fulllPrice={diszDoboz1Price}
+    fullWeight={diszDoboz1Weight}
+  />
+  <ListItem
+    image={image8}
+    honeyName={diszDoboz2Name}
+    fulllPrice={diszDoboz2Price}
+    fullWeight={diszDoboz2Weight}
+  />
+  <ListItem
+    image={image9}
+    honeyName={diszDoboz3Name}
+    fulllPrice={diszDoboz3Price}
+    fullWeight={diszDoboz3Weight}
+  />
 </div>
