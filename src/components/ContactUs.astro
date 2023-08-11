@@ -1,0 +1,24 @@
+---
+import image from "../assets/contact_us_bee.jpg";
+
+const contactTitle = "Elérhetőségeink";
+const phoneNumber = "01 34/123-4567";
+const days = "Hétfő - Péntek";
+const hours = "8:00 - 16:00";
+---
+
+<div class="contact-us-container">
+  <div class="contact-image">
+    <img src={image} style="width:100%" />
+  </div>
+  <div style="width:100%;height:100%;" class="contact-message">
+    <h3>{contactTitle}</h3>
+    <h5 class="contact-number">{phoneNumber}</h5>
+    <div class="contact-time">
+      {days}
+      <br />
+      {hours}
+    </div>
+  </div>
+  <div class="contact-bottom"></div>
+</div>

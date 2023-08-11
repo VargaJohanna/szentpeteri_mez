@@ -95,10 +95,56 @@ h3 {
   box-sizing: border-box;
 }
 
+.contact-us-container {
+  display: grid;
+  grid-template-columns: auto 700px auto; 
+  grid-template-rows: 200px 200px auto auto;
+}
+
+.contact-image {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+
+/* .contact-image img {
+  object-fit: none;
+  object-position: 50% 100%;
+} */
+
+.contact-message {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: #ebdc9d;
+  width: 50%;
+  z-index: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-bottom {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-color: #333333ff;
+  padding: 100px;
+}
+
+.contact-time {
+  line-height: 1.6;
+}
+
 @media only screen and (min-width: 799px) {
   .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .honey-title {font-size: 16pt;}
-  .honey-weight {font-size: 16pt;}
+  .honey-title, .contact-number {font-size: 16pt;}
+  .honey-weight, .contact-time {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
 }
 
