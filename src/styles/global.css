@@ -137,14 +137,15 @@ h3 {
   padding: 100px;
 }
 
-.contact-time {
+.contact-name { 
   line-height: 1.6;
+  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 799px) {
   .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .honey-title, .contact-number {font-size: 16pt;}
-  .honey-weight, .contact-time {font-size: 16pt;}
+  .honey-weight, .contact-name {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
 }
 
