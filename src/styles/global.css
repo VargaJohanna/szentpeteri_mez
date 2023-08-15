@@ -97,7 +97,7 @@ h3 {
 
 .contact-us-container {
   display: grid;
-  grid-template-columns: auto 700px auto; 
+  grid-template-columns: auto 400px auto; 
   grid-template-rows: 200px 200px auto auto;
 }
 
@@ -110,11 +110,6 @@ h3 {
   object-fit: cover;
   object-position: 50% 100%;
 }
-
-/* .contact-image img {
-  object-fit: none;
-  object-position: 50% 100%;
-} */
 
 .contact-message {
   grid-column-start: 2;
@@ -139,7 +134,17 @@ h3 {
 
 .contact-name { 
   line-height: 1.6;
+  letter-spacing: 2px;
   text-transform: capitalize;
+  font-style: italic;
+  font-size: 20pt;
+}
+
+.contact-number {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20pt;
+  margin: 20px;
 }
 
 @media only screen and (min-width: 799px) {
@@ -147,9 +152,12 @@ h3 {
   .honey-title, .contact-number {font-size: 16pt;}
   .honey-weight, .contact-name {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
+  .contact-us-container {grid-template-columns: auto 400px auto; }
 }
 
 @media only screen and (min-width: 1199px) {
   .list-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .honey-title {font-size: 20pt;}
+  .honey-title, .contact-number {font-size: 20pt;}
+  .contact-name {font-size: 20pt}
+  .contact-us-container {grid-template-columns: auto 700px auto; }
 }
