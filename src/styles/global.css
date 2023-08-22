@@ -42,10 +42,10 @@ h3 {
   text-transform: uppercase;
 }
 
-.carousel {
+/* .carousel {
   background-color: #fcc409;
   height: 400px;
-}
+} */
 
 .list-container {
   display: grid;
