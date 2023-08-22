@@ -75,7 +75,7 @@ h3 {
   display: grid;
   grid-template-columns: auto auto;
   font-size: 20pt;
-  gap: 20px;
+  gap: 10px;
 }
 
 .honey-title {
