@@ -150,6 +150,8 @@ h3 {
   letter-spacing: 2px;
   font-size: 20pt;
   margin: 20px;
+  text-transform: lowercase;
+  line-height: 1.6;
 }
 
 .attribution {
