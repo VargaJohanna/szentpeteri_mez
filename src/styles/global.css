@@ -51,6 +51,20 @@ h3 {
   position: relative;
   overflow: hidden;
 }
+/* 
+@keyframes slider {
+  0%, 25%, 100%{left: 0}
+  
+  30%, 55%{left: -100%}
+  
+  60%, 85%{left: -200%}
+}
+
+.slider-wrapper .slides-container {
+  
+  animation: slider 26s infinite;
+} */
+
 
 .slides-container {
   height: calc(100vh - 2rem);
@@ -59,12 +73,13 @@ h3 {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
   scrollbar-width: none;
   /* Firefox */
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
+
 }
 
 .slide {
@@ -81,10 +96,12 @@ h3 {
 
 .slide:nth-child(1) {
   background-color: #fcc409;
+  margin: 0;
 }
 
 .slide:nth-child(2) {
   background-color: #b03532;
+  margin: 0;
 }
 
 .slide:nth-child(3) {
@@ -134,8 +151,9 @@ h3 {
 .portrait-slide-container {
   background-color: #fcc409;
   display: grid;
-  grid-template-columns: 100px 300px 300px auto 100px;
-  grid-template-rows: 100px 200px 100px auto;
+  height: 100%;
+  grid-template-columns: 200px auto auto auto 200px;
+  grid-template-rows: 50px auto 100px 100px;
 }
 
 .portrait-slide-image {
@@ -145,8 +163,9 @@ h3 {
   grid-row-end: 4;
   z-index: 2;
   object-fit: cover;
-  width: 70%;
-  padding-left: 30px;
+  width: auto;
+  max-width: 500px;
+  min-width: 350px;
 }
 
 .portrait-slide-image > img {
