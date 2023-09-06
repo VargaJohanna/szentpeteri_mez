@@ -155,7 +155,7 @@ h3 {
   display: grid;
   height: 100%;
   grid-template-columns: 200px auto auto auto 200px;
-  grid-template-rows: 50px auto 100px 100px;
+  grid-template-rows: 50px auto auto 100px;
 }
 
 .portrait-slide-image {
@@ -181,7 +181,9 @@ h3 {
   grid-row-end: 3;
   background-color: #f4ebc8;
   z-index: 1;
-  margin: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 30px;
 }
 
 .portrait-slide-title {
@@ -191,6 +193,9 @@ h3 {
 .portrait-slide-text {
   font-style: italic;
   font-size: 16pt;
+  margin-top: 30px;
+  line-height: 1.5;
+  padding-bottom: 200px;
 }
 
 .portrait-slide-text-background {
@@ -351,6 +356,24 @@ h3 {
   .contact-us-container {
     grid-template-rows: 200px 200px auto auto;
   }
+
+  .portrait-slide-text {
+    padding-bottom: 100px;
+  }
+
+  .portrait-slide-container {
+    grid-template-columns: 50px auto auto auto 50px;
+    grid-template-rows: 50px auto auto 100px;
+  }
+
+  .portrait-slide-title {
+    font-size: 36pt;
+  }
+
+  .portrait-slide-image {
+    max-width: 400px;
+    min-width: 350px;
+  }
 }
 
 @media only screen and (min-width: 1199px) {
@@ -373,5 +396,23 @@ h3 {
 
   .contact-us-container {
     grid-template-rows: 200px 200px auto auto;
+  }
+
+  .portrait-slide-container {
+    grid-template-columns: 200px auto auto auto 200px;
+    grid-template-rows: 50px auto auto 100px;
+  }
+
+  .portrait-slide-text {
+    padding-bottom: 200px;
+  }
+
+  .portrait-slide-title {
+    font-size: 72pt;
+  }
+
+  .portrait-slide-image {
+    max-width: 500px;
+    min-width: 350px;
   }
 }
