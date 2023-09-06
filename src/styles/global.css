@@ -31,11 +31,13 @@ h3 {
   background-color: #333333;
   color: #ffffff;
   padding-inline-start: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-inline-end: 40px;
   display: flex;
   justify-content: space-between;
+  font-size: 24pt;
+  font-weight: 500;
 }
 
 .header-brand {
