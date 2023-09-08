@@ -350,6 +350,8 @@ h3 {
   letter-spacing: 2px;
   font-size: 20pt;
   margin: 20px;
+  text-transform: lowercase;
+  line-height: 1.6;
 }
 
 .attribution {
@@ -358,6 +360,7 @@ h3 {
   margin-top: 80px;
   margin-bottom: 20px;
   margin-right: 20px;
+  font-size: 8pt;
 }
 
 .attribution,
