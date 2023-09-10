@@ -39,12 +39,17 @@ const diszDoboz2Price = "4000 Ft";
 const diszDoboz3Name = "Díszdobozos kiszerelés";
 const diszDoboz3Weight = "3 x 140 g";
 const diszDoboz3Price = "3000 Ft";
+const altTextVodor = "Napraforgó méz vödrös kiszerelésben"
+const altTextDisz1 = "Díszdoboz egy üveg mézzel"
+const altTextDisz2 = "Díszdoboz két üveg mézzel"
+const altTextDisz3 = "Díszdoboz három üveg mézzel"
 ---
 
 <h2>{listTitle}</h2>
 <div class="list-container">
   <ListItem
     image={image1}
+    altText={akacName}
     honeyName={akacName}
     fulllPrice={akacFullPrice}
     halfPrice={akacHalfPrice}
@@ -53,6 +58,7 @@ const diszDoboz3Price = "3000 Ft";
   />
   <ListItem
     image={image2}
+    altText={repceName}
     honeyName={repceName}
     fulllPrice={repceFullPrice}
     halfPrice={repceHalfPrice}
@@ -61,6 +67,7 @@ const diszDoboz3Price = "3000 Ft";
   />
   <ListItem
     image={image3}
+    altText={napraforgoName}
     honeyName={napraforgoName}
     fulllPrice={napraforgoFullPrice}
     halfPrice={napraforgoHalfPrice}
@@ -69,36 +76,42 @@ const diszDoboz3Price = "3000 Ft";
   />
   <ListItem
     image={image4}
+    altText={altTextVodor}
     honeyName={napraforgoName}
     fulllPrice={napraforgoBucketPrice}
     fullWeight={napraforgoBucketWeight}
   />
   <ListItem
     image={image5}
+    altText={viragporName}
     honeyName={viragporName}
     fulllPrice={viragporPrice}
     fullWeight={viragporWeight}
   />
   <ListItem
     image={image6}
+    altText={fadobozName}
     honeyName={fadobozName}
     fulllPrice={fadobozPrice}
     fullWeight={fadobozWeight}
   />
   <ListItem
     image={image7}
+    altText={altTextDisz1}
     honeyName={diszDoboz1Name}
     fulllPrice={diszDoboz1Price}
     fullWeight={diszDoboz1Weight}
   />
   <ListItem
     image={image8}
+    altText={altTextDisz2}
     honeyName={diszDoboz2Name}
     fulllPrice={diszDoboz2Price}
     fullWeight={diszDoboz2Weight}
   />
   <ListItem
     image={image9}
+    altText={altTextDisz3}
     honeyName={diszDoboz3Name}
     fulllPrice={diszDoboz3Price}
     fullWeight={diszDoboz3Weight}

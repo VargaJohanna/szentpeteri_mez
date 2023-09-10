@@ -5,10 +5,11 @@ const { halfPrice } = Astro.props;
 const { fullWeight } = Astro.props;
 const { halfWeight } = Astro.props;
 const { image } = Astro.props;
+const { altText } = Astro.props;
 ---
 
 <div class="list-item">
-  <img class="list-image" src={image} style="width:100%" />
+  <img class="list-image" src={image} style="width:100%" alt={altText} />
   <div class="honey-title">{honeyName}</div>
   <div class="honey-price-container">
     <div class="honey-weight">{fullWeight}</div>
