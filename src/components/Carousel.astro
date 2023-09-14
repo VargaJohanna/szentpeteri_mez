@@ -75,17 +75,14 @@ const title3 = "Zümm Zümm";
   var intervalReference = setInterval(clickNextButton, 3000);
 
   slidesContainer.addEventListener("mouseover", (event) => {
-    console.log("hover");
     clearInterval(intervalReference);
   });
 
   slidesContainer.addEventListener("mouseout", (event) => {
-    console.log("out");
     intervalReference  = setInterval(clickNextButton, 3000);
   });
 
   nextButton.addEventListener("click", (event) => {
-    console.log("click");
     clickNextButton();
   });
 
