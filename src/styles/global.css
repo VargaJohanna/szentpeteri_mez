@@ -149,14 +149,14 @@ h3 {
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 16pt;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: lowercase;
 }
 
 .contact-email {
   font-weight: 600;
   font-size: 16pt;
-  margin: 20px;
   text-transform: lowercase;
 }
 
@@ -185,14 +185,15 @@ h3 {
 
 @media only screen and (min-width: 650px) {
   .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .honey-title, .contact-number, .contact-email {font-size: 16pt;}
+  .honey-title {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
   .contact-us-container {grid-template-columns: auto 500px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
-  h2 {font-size: 30pt;}
-  .contact-email {letter-spacing: 2px;}
+  h2 {font-size: 36pt;}
+  .contact-email, .contact-number {letter-spacing: 2px; font-size: 20pt;}
+  .contact-number {margin-bottom: 10;}
 }
 
 @media only screen and (min-width: 1199px) {
@@ -203,5 +204,6 @@ h3 {
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 24pt;}
   h2 {font-size: 36pt;}
-  .contact-email {letter-spacing: 2px;}
+  .contact-email {letter-spacing: 2px; font-size: 20pt;}
+  .contact-number {margin-bottom: 20;}
 } 
