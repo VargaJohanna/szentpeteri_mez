@@ -101,7 +101,7 @@ h3 {
 
 .contact-us-container {
   display: grid;
-  grid-template-columns: auto 350px auto; 
+  grid-template-columns: auto auto auto; 
   grid-template-rows: 100px 200px auto auto;
 }
 
@@ -142,6 +142,8 @@ h3 {
   font-size: 20pt;
   margin-top: 20px;
   margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-transform: uppercase;
 }
 
@@ -166,6 +168,8 @@ h3 {
   font-weight: 600;
   font-size: 16pt;
   text-transform: lowercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .attribution {
@@ -196,11 +200,11 @@ h3 {
   .honey-title {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
-  .contact-us-container {grid-template-columns: auto 500px auto; }
+  .contact-us-container {grid-template-columns: auto auto auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
   h2 {font-size: 36pt;}
-  .contact-email {letter-spacing: 2px; font-size: 24pt;}
+  .contact-email {letter-spacing: 2px; font-size: 24pt; padding-left: 30px; padding-right: 30px;}
   .contact-number {letter-spacing: 2px; font-size: 24pt; margin-bottom: 10;}
   .contact-title {font-size: 26pt;}
   .contact-name {font-size: 24pt}
