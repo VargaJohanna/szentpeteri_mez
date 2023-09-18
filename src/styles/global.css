@@ -154,6 +154,14 @@ h3 {
   line-height: 1.6;
 }
 
+.contact-email {
+  font-weight: 600;
+  font-size: 16pt;
+  margin: 20px;
+  text-transform: lowercase;
+  line-height: 1.6;
+}
+
 .attribution {
   color: #6d6d6d;
   text-align: end;
@@ -179,21 +187,23 @@ h3 {
 
 @media only screen and (min-width: 799px) {
   .list-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .honey-title, .contact-number {font-size: 16pt;}
+  .honey-title, .contact-number, .contact-email {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
   .contact-us-container {grid-template-columns: auto 500px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
   h2 {font-size: 30pt;}
+  .contact-email {letter-spacing: 2px;}
 }
 
 @media only screen and (min-width: 1199px) {
   .list-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .honey-title, .contact-number {font-size: 20pt;}
+  .honey-title, .contact-number, .contact-email {font-size: 20pt;}
   .contact-name {font-size: 20pt}
   .contact-us-container {grid-template-columns: auto 700px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 24pt;}
   h2 {font-size: 36pt;}
+  .contact-email {letter-spacing: 2px;}
 } 
