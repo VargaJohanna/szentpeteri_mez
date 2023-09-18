@@ -166,7 +166,7 @@ h3 {
   margin-top: 80px;
   margin-bottom: 20px;
   margin-right: 20px;
-  font-size: 8pt;
+  font-size: 10pt;
 }
 
 .attribution, .attribution > a:visited, .attribution > a:link {
@@ -188,7 +188,7 @@ h3 {
   .honey-title, .contact-number, .contact-email {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
-  .contact-us-container {grid-template-columns: auto 500px auto; }
+  .contact-us-container {grid-template-columns: auto 400px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
   h2 {font-size: 30pt;}
