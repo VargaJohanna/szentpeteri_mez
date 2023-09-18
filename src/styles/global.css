@@ -137,6 +137,14 @@ h3 {
   padding-left: 100px;
 }
 
+.contact-title {
+  letter-spacing: 2px;
+  font-size: 20pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
 .contact-name { 
   line-height: 1.6;
   letter-spacing: 2px;
@@ -192,18 +200,21 @@ h3 {
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
   h2 {font-size: 36pt;}
-  .contact-email, .contact-number {letter-spacing: 2px; font-size: 20pt;}
-  .contact-number {margin-bottom: 10;}
+  .contact-email {letter-spacing: 2px; font-size: 24pt;}
+  .contact-number {letter-spacing: 2px; font-size: 24pt; margin-bottom: 10;}
+  .contact-title {font-size: 26pt;}
+  .contact-name {font-size: 24pt}
 }
 
 @media only screen and (min-width: 1199px) {
   .list-container { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .honey-title, .contact-number, .contact-email {font-size: 20pt;}
-  .contact-name {font-size: 20pt}
+  .honey-title {font-size: 20pt;}
+  .contact-name {font-size: 24pt}
   .contact-us-container {grid-template-columns: auto 700px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 24pt;}
   h2 {font-size: 36pt;}
-  .contact-email {letter-spacing: 2px; font-size: 20pt;}
-  .contact-number {margin-bottom: 20;}
+  .contact-email {letter-spacing: 2px; font-size: 24pt;}
+  .contact-number {font-size: 24pt; margin-bottom: 20;}
+  .contact-title {font-size: 26pt;}
 } 
