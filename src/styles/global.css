@@ -101,7 +101,7 @@ h3 {
 
 .contact-us-container {
   display: grid;
-  grid-template-columns: auto 400px auto; 
+  grid-template-columns: auto 350px auto; 
   grid-template-rows: 100px 200px auto auto;
 }
 
@@ -182,7 +182,7 @@ h3 {
   .honey-title, .contact-number {font-size: 16pt;}
   .honey-weight {font-size: 16pt;}
   .honey-price {font-size: 16pt;}
-  .contact-us-container {grid-template-columns: auto 400px auto; }
+  .contact-us-container {grid-template-columns: auto 500px auto; }
   .contact-us-container {grid-template-rows: 200px 200px auto auto;}
   h3 {font-size: 20pt;}
   h2 {font-size: 30pt;}
