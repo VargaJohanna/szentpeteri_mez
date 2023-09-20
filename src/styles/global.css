@@ -17,13 +17,13 @@ body {
 h2 {
   text-align: center;
   padding: 60px;
-  font-size: 36pt;
+  font-size: 24pt;
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 24pt;
+  font-size: 18pt;
   font-weight: 500;
 }
 
@@ -301,7 +301,7 @@ h3 {
 
 .contact-us-container {
   display: grid;
-  grid-template-columns: auto 400px auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 100px 200px auto auto;
 }
 
@@ -337,6 +337,16 @@ h3 {
   padding-left: 100px;
 }
 
+.contact-title {
+  letter-spacing: 2px;
+  font-size: 20pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
+
 .contact-name {
   line-height: 1.6;
   letter-spacing: 2px;
@@ -348,10 +358,18 @@ h3 {
 .contact-number {
   font-weight: 600;
   letter-spacing: 2px;
-  font-size: 20pt;
-  margin: 20px;
+  font-size: 16pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
   text-transform: lowercase;
-  line-height: 1.6;
+}
+
+.contact-email {
+  font-weight: 600;
+  font-size: 16pt;
+  text-transform: lowercase;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .attribution {
@@ -379,7 +397,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 799px) {
+@media only screen and (min-width: 650) {
   .list-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -397,12 +415,19 @@ h3 {
   }
 
   .contact-us-container {
-    grid-template-columns: auto 400px auto;
+    grid-template-columns: auto auto auto;
   }
 
   .contact-us-container {
     grid-template-rows: 200px 200px auto auto;
   }
+
+  h3 {font-size: 20pt;}
+  h2 {font-size: 36pt;}
+  .contact-email {letter-spacing: 2px; font-size: 24pt; padding-left: 30px; padding-right: 30px;}
+  .contact-number {letter-spacing: 2px; font-size: 24pt; margin-bottom: 10;}
+  .contact-title {font-size: 26pt;}
+  .contact-name {font-size: 24pt}
 
   .portrait-slide-text {
     padding-bottom: 100px;
@@ -493,7 +518,7 @@ h3 {
   }
 
   .contact-name {
-    font-size: 20pt
+    font-size: 24pt
   }
 
   .contact-us-container {
@@ -503,6 +528,12 @@ h3 {
   .contact-us-container {
     grid-template-rows: 200px 200px auto auto;
   }
+
+  h3 {font-size: 24pt;}
+  h2 {font-size: 36pt;}
+  .contact-email {letter-spacing: 2px; font-size: 24pt;}
+  .contact-number {font-size: 24pt; margin-bottom: 20;}
+  .contact-title {font-size: 26pt;}
 
   .portrait-slide-container {
     grid-template-columns: 200px auto auto auto 200px;
