@@ -59,6 +59,7 @@ const title1 = "Rólunk";
   let sumScroll = 0;
   const slidesContainerWidth = slidesContainer.scrollWidth;
   let slideWidth = slide.clientWidth;
+  let seconds = 30000;
 
   function clickNextButton() {
     if (slidesContainerWidth - sumScroll > sumScroll) {
@@ -72,14 +73,14 @@ const title1 = "Rólunk";
     }
   }
 
-  var intervalReference = setInterval(clickNextButton, 3000);
+  var intervalReference = setInterval(clickNextButton, seconds);
 
   slidesContainer.addEventListener("mouseover", (event) => {
     clearInterval(intervalReference);
   });
 
   slidesContainer.addEventListener("mouseout", (event) => {
-    intervalReference  = setInterval(clickNextButton, 3000);
+    intervalReference  = setInterval(clickNextButton, seconds);
   });
 
   nextButton.addEventListener("click", (event) => {
