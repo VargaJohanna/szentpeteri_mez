@@ -1,0 +1,35 @@
+---
+import "../styles/global.css";
+
+const { image } = Astro.props;
+const { isPortrait } = Astro.props;
+const { slideMessage } = Astro.props;
+const { slideTitle } = Astro.props;
+const visible = false;
+---
+
+{
+  isPortrait === 'true' ? 
+    <div class="portrait-slide-container">
+      <div class="portrait-slide-image">
+        <img src={image} style="width:100%" />
+      </div>
+      <div class="portrait-slide-text-container">
+        <div class="portrait-slide-title">{slideTitle}</div>
+        <div class="portrait-slide-text">{slideMessage}</div>
+      </div>
+      <div class="portrait-slide-text-background" />
+    </div>
+   : 
+  <div class="landscape-slide-container">
+      <div class="landscape-slide-image">
+        <img src={image} style="width:100%" />
+      </div>
+      <div class="landscape-slide-text-container">
+        <div class="landscape-slide-title">{slideTitle}</div>
+        <div class="landscape-slide-text">{slideMessage}</div>
+      </div>
+      <div class="landscape-slide-text-background" />
+    </div>
+  
+}
