@@ -6,11 +6,9 @@ A website for Szentpéteri Méz, offering producer honey for sale directly from 
 
 ## Screenshots
 
-<div style="text-align: center;">
-  <img src="screenshots/desktop.png" alt="Desktop screenshot" height="500" style="display:inline-block; margin:0 12px; vertical-align:top;" />
-  <img src="screenshots/tablet.png" alt="Tablet screenshot" height="500" style="display:inline-block; margin:0 12px; vertical-align:top;" />
-  <img src="screenshots/mobile.png" alt="Mobile screenshot" height="500" style="display:inline-block; margin:0 12px; vertical-align:top;" />
-</div>
+| Desktop | Tablet | Mobile |
+| -------- | ------ | ------ |
+| <img src="screenshots/desktop.png" alt="Desktop screenshot" height="500" /> | <img src="screenshots/tablet.png" alt="Tablet screenshot" height="500" /> | <img src="screenshots/mobile.png" alt="Mobile screenshot" height="500" /> |
 
 
 
