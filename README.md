@@ -4,6 +4,13 @@ A website for Szentpéteri Méz, offering producer honey for sale directly from 
 
 **Live Site:** [https://szentpeterimez.hu/](https://szentpeterimez.hu/)
 
+## Tech Stack
+
+- **Framework:** [Astro](https://astro.build/) - Static site generator for fast websites
+- **UI Library:** [Preact](https://preactjs.com/) - Lightweight React alternative
+- **Language:** JavaScript/TypeScript
+- **Deployment:** Firebase Hosting
+
 ## Screenshots
 
 | Desktop | Tablet | Mobile |
